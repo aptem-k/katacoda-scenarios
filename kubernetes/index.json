@@ -15,9 +15,10 @@
   },
   "environment": {
   	"hidefinish": true,
+  	"icon": "fa-kubernetes",
     "uilayout": "terminal"
   },
   "backend": {
-    "imageid": "bash"
+    "imageid": "kubernetes"
   }
 }
