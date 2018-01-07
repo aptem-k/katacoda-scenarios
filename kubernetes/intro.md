@@ -1,2 +1,2 @@
-This short scenario will demonstate main Kubernetes capabilities.
+Short demonstration of main Kubernetes capabilities.
 
