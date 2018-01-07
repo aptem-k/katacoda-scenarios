@@ -10,7 +10,7 @@
     }],
     "intro": {
       "text": "intro.md",
-      "code": "launch.sh"
+      "code": "env-init.sh"
     }
   },
   "environment": {
