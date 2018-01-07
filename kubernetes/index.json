@@ -4,19 +4,30 @@
   "difficulty": "beginner",
   "time": "30 minutes",
   "details": {
-    "steps": [{
-      "title": "Step 1 - Health Check",
-      "text": "step1.md"
-    }],
+    "steps": [
+      {
+        "title": "Health Check",
+        "text": "step1.md"
+      },
+      {
+        "title": "Deploy Database",
+        "text": "step2.md"
+      }
+    ],
     "intro": {
       "text": "intro.md",
       "code": "env-init.sh"
     }
   },
+  "files": [
+    "lets-chat-mongo.yaml",
+    "lets-chat-app.yaml"
+  ],
   "environment": {
   	"hidefinish": true,
+  	"uisettings": "yaml",
   	"icon": "fa-kubernetes",
-    "uilayout": "terminal"
+    "uilayout": "editor-terminal"
   },
   "backend": {
     "imageid": "kubernetes"

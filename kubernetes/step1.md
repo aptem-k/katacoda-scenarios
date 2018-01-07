@@ -16,4 +16,4 @@ Display running kubernetes services
 
 Display system pods
 
-`kubectl get pods --all-namespaces`{{execute}}
+`kubectl get pods -n kube-system`{{execute}}
