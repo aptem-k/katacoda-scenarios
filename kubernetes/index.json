@@ -31,9 +31,9 @@
   	"hidefinish": true,
   	"uisettings": "yaml",
   	"icon": "fa-kubernetes",
-    "uilayout": "editor-terminal"
+    "uilayout": "terminal"
   },
   "backend": {
-    "imageid": "minikube"
+    "imageid": "bash"
   }
 }
