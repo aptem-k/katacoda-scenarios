@@ -20,7 +20,7 @@
     ],
     "intro": {
       "text": "intro.md",
-      "code": "intro-code_.sh"
+      "code": "intro-code.sh"
     }
   },
   "files": [
