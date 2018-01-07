@@ -1,1 +1,2 @@
-Welcome to Kubernetes demo.
+This short scenario will demonstate main Kubernetes capabilities.
+
