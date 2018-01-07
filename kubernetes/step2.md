@@ -4,7 +4,7 @@ In this step we will create manifest for database deployment.
 
 Copy following content into the editor (lets-chat-mongo.yaml):
 
-<pre class="file" data-filename="/root/lets-chat-mongo.yaml" data-target="replace">apiVersion: extensions/v1beta1
+<pre class="file" data-filename="lets-chat-mongo.yaml" data-target="replace">apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: lets-chat-mongo
