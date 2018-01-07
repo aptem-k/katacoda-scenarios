@@ -1,4 +1,4 @@
-In this step we will deploy database.
+In this step we will create database manifest.
 
 ## Task
 
