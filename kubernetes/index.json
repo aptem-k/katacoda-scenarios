@@ -20,12 +20,12 @@
     ],
     "intro": {
       "text": "intro.md",
-      "code": "env-init.sh"
+      "code": "intro-code.sh"
     }
   },
   "files": [
-    "lets-chat-mongo.yaml",
-    "lets-chat-app.yaml"
+    "/root/lets-chat-mongo.yaml",
+    "/root/lets-chat-app.yaml"
   ],
   "environment": {
   	"hidefinish": true,
