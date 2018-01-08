@@ -24,7 +24,8 @@
       "code": "intro-code.sh"
     },
     "assets": {
-      "host01": [ { "file": "lets-chat-mongo.yml", "target": "/root/demo" } ]
+      "host01": [ { "file": "lets-chat-mongo.yml", "target": "/root/demo" } ],
+      "host01": [ { "file": "lets-chat-app.yml", "target": "/root/demo" } ]
     }
   },
   "files": [
