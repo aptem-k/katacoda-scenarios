@@ -36,5 +36,5 @@ Login to pod machine
 
 `ls /data/db`{{execute}}
 
-`logout`{{execute}}
+`exit`{{execute}}
 
