@@ -4,5 +4,5 @@ metadata:
   name: mongo-settings
 data:
   settings.yml: |-
-    database.uri: mongodb://{{ .Release.Name }}-mongodb/letschat
-    
+    database:
+      uri: "mongodb://{{ .Release.Name }}-mongodb/letschat"
