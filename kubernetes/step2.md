@@ -16,7 +16,7 @@ Display deployments
 
 Display pods
 
-`kubectl get pods`{{execute}}
+`kubectl get pods --show-labels=true`{{execute}}
 
 Display services
 
