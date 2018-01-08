@@ -8,24 +8,24 @@ View chart structure
 
 View Chart.yaml
 
-`cat Chart.yaml`{{execute}}
+`cat lets-chat/Chart.yaml`{{execute}}
 
 View values.yaml
 
-`cat values.yaml`{{execute}}
+`cat lets-chat/values.yaml`{{execute}}
 
 View requirements.yaml
 
-`cat requirements.yaml`{{execute}}
+`cat lets-chat/requirements.yaml`{{execute}}
 
-View deployment.yml
+View deployment.yaml
 
-`cat deployment.yml`{{execute}}
+`cat lets-chat/templates/deployment.yaml`{{execute}}
 
-View service.yml
+View service.yaml
 
-`cat service.yml`{{execute}}
+`cat lets-chat/templates/service.yaml`{{execute}}
 
 View configmap.yaml
 
-`cat configmap.yaml`{{execute}}
+`cat lets-chat/templates/configmap.yaml`{{execute}}
