@@ -6,21 +6,13 @@
   "details": {
     "steps": [
       {
-        "title": "Health Check",
+        "title": "Install Helm",
         "text": "step1.md"
       },
       {
-        "title": "Database Deployment",
+        "title": "Explore Chart",
         "text": "step2.md",
         "code": "step2-code.sh"
-      },
-      {
-        "title": "Frontend Deployment",
-        "text": "step3.md"
-      },
-      {
-        "title": "Kubernetes Dashboard",
-        "text": "step4.md"
       }
     ],
     "intro": {
@@ -30,13 +22,21 @@
     "assets": {
       "host01": [
         {
-          "file": "lets-chat-mongo.yml",
-          "target": "/root/demo"
+          "file": "Chart.yaml",
+          "target": "/root/demo/lets-chat"
         },
         {
-          "file": "lets-chat-app.yml",
-          "target": "/root/demo"
-        }
+          "file": "values.yaml",
+          "target": "/root/demo/lets-chat"
+        },
+        {
+          "file": "requirements.yaml",
+          "target": "/root/demo/lets-chat"
+        },
+        {
+          "file": "templates/*",
+          "target": "/root/demo/lets-chat/templates"
+        }        
       ]
     }
   },
