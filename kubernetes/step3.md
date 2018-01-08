@@ -10,13 +10,17 @@ Create deployment based on manifest
 
 `kubectl create -f lets-chat-app.yml`{{execute}}
 
-Print services
+Display services
 
 `kubectl get services`{{execute}}
 
-Print pods
+Display pods
 
 `kubectl get pods`{{execute}}
+
+Print log
+
+`kubectl log -l app=lets-chat,tier=frontend`{{execute}}
 
 Once all pods are up, open the application using URL below with node port
 

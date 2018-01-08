@@ -10,18 +10,25 @@ Create deployment based on manifest
 
 `kubectl create -f lets-chat-mongo.yml`{{execute}}
 
-Print deployments
+Display deployments
 
 `kubectl get deployments`{{execute}}
 
-Print pods
+Display pods
 
 `kubectl get pods`{{execute}}
 
-Print services
+Display services
 
 `kubectl get services`{{execute}}
 
 Monitor pod
 
 `kubectl describe pod -l app=lets-chat,tier=backend`{{execute}}
+
+Login to pod machine
+
+`kubectl exec $(kubectl get pods --selector=app=lets-chat,tier=backend --output=jsonpath={.items..metadata.name}) -it -- bash`{{execute}}
+`ls /data/db`{{execute}}
+
+
