@@ -24,8 +24,8 @@
     }
   },
   "files": [
-    "lets-chat-mongo.yml",
-    "lets-chat-app.yml"
+    "lets-chat-mongo.yaml",
+    "lets-chat-app.yaml"
   ],
   "environment": {
   	"hidefinish": true,
