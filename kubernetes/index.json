@@ -23,9 +23,17 @@
       "code": "intro-code.sh"
     }
   },
+  "assets": {
+      "client": [
+        {
+          "file": "lets-chat-mongo.yml",
+          "target": "~/"
+        }
+      ]
+  },
   "files": [
-    "lets-chat-mongo.yaml",
-    "lets-chat-app.yaml"
+    "lets-chat-mongo.yml",
+    "lets-chat-app.yml"
   ],
   "environment": {
   	"hidefinish": true,
@@ -34,6 +42,6 @@
     "uilayout": "terminal"
   },
   "backend": {
-    "imageid": "minikube"
+    "imageid": "kubernetes"
   }
 }
