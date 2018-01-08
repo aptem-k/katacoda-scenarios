@@ -37,3 +37,5 @@ http://[[HOST_SUBDOMAIN]]-[[KATACODA_HOST]].environments.katacoda.com
 Clean up
 
 `helm delete --purge demo`{{execute}}
+
+`kubectl get pods`{{execute}}
