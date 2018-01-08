@@ -1,20 +1,20 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: lets-chat-app
+  name: {{ .Chart.Name }}-app
   labels:
-    app: lets-chat
+    app: {{ .Chart.Name }}
     tier: frontend
 spec:
   replicas: {{ .Values.replicas }}
   template:
     metadata:
       labels:
-        app: lets-chat
+        app: {{ .Chart.Name }}
         tier: frontend
     spec:
       containers:
-      - name: lets-chat-app
+      - name: {{ .Chart.Name }}-app
         image: "sdelements/lets-chat:latest"
         imagePullPolicy: IfNotPresent
         ports:
