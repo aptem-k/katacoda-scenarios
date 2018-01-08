@@ -1,46 +1,27 @@
-In this step we will create manifest for database deployment.
+In this step we will deploy database.
 
 ## Task
 
-Copy following content into the editor (lets-chat-mongo.yaml):
+View deployment manifest
 
-<pre class="file" data-filename="lets-chat-mongo.yaml" data-target="replace">apiVersion: extensions/v1beta1
-kind: Deployment
-metadata:
-  name: lets-chat-mongo
-  labels:
-    app: lets-chat
-    tier: backend
-spec:
-  replicas: 1
-  template:
-    metadata:
-      labels:
-        app: lets-chat
-        tier: backend
-    spec:
-      containers:
-      - name: lets-chat-mongo
-        image: "mongo:3.5.11"
-        imagePullPolicy: IfNotPresent
-        ports:
-        - name: http
-          containerPort: 27017
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: mongo
-  labels:
-    tier: backend
-spec:
-  type: ClusterIP
-  selector:
-    app: lets-chat
-    tier: backend
-  ports:
-  - port: 27017
-    targetPort: 27017
-    protocol: TCP
-    name: lets-chat-mongo-port
-</pre>
+`cat lets-chat-mongo.yml`{{execute}}
+
+Create deployment based on manifest
+
+`kubectl create -f lets-chat-mongo.yml`{{execute}}
+
+Print deployments
+
+`kubectl get deployments`{{execute}}
+
+Print pods
+
+`kubectl get pods`{{execute}}
+
+Print services
+
+`kubectl get services`{{execute}}
+
+Monitor pod
+
+`kubectl describe pod -l app=lets-chat,tier=backend`{{execute}}
