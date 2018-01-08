@@ -1,4 +1,4 @@
-In this step we will deploy the chart.
+In this step we will deploy and maintain life cycle of the application.
 
 ## Task
 
@@ -33,3 +33,7 @@ Open application (with node port)
 `helm status demo`{{execute}}
 
 http://[[HOST_SUBDOMAIN]]-[[KATACODA_HOST]].environments.katacoda.com
+
+Clean up
+
+`helm delete --purge demo`{{execute}}
