@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: {{ .Chart.Name }}-app
-        image: "sdelements/lets-chat:latest"
+        image: "sdelements/lets-chat:{{ .Chart.Version }}"
         imagePullPolicy: IfNotPresent
         ports:
         - name: http

@@ -1,4 +1,4 @@
-In this step we will inspect our chart.
+In this step we will inspect the chart.
 
 ## Task
 
@@ -18,4 +18,4 @@ Examine a chart for possible issues
 
 Simulate installation
 
-`helm install --name demo --debug --dry-run lets-chat`{{execute}}
+`helm install lets-chat --name demo --debug --dry-run`{{execute}}

@@ -17,6 +17,10 @@
       {
         "title": "Inspect Chart",
         "text": "step3.md"
+      },
+      {
+        "title": "Deploy Application",
+        "text": "step4.md"
       }
     ],
     "intro": {
