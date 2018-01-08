@@ -3,5 +3,6 @@ kind: ConfigMap
 metadata:
   name: mongo-settings
 data:
-  test.yml: |-
+  settings.yml: |-
     database.uri: mongodb://{{ .Release.Name }}-mongodb/letschat
+    
