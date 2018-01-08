@@ -20,4 +20,4 @@ Print pods
 
 Once all pods are up, open the application using URL below with node port
 
-http://[[MASTER_SUBDOMAIN]]-[[KATACODA_HOST]].environments.katacoda.com/
+http://[[HOST_SUBDOMAIN]]-[[KATACODA_HOST]].environments.katacoda.com/
