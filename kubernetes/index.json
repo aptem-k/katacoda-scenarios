@@ -21,15 +21,15 @@
     "intro": {
       "text": "intro.md",
       "code": "intro-code.sh"
-    }
-  },
-  "assets": {
+    },
+    "assets": {
       "client": [
         {
           "file": "lets-chat-mongo.yml",
           "target": "~/"
         }
       ]
+    }
   },
   "files": [
     "lets-chat-mongo.yml",
