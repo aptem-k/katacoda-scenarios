@@ -10,7 +10,7 @@
         "text": "step1.md"
       },
       {
-        "title": "Explore Chart",
+        "title": "Chart Structure",
         "text": "step2.md",
         "code": "step2-code.sh"
       },
@@ -19,7 +19,7 @@
         "text": "step3.md"
       },
       {
-        "title": "Deploy Application",
+        "title": "Maintain Application",
         "text": "step4.md"
       }
     ],
@@ -30,15 +30,7 @@
     "assets": {
       "host01": [
         {
-          "file": "Chart.yaml",
-          "target": "/root/demo/lets-chat"
-        },
-        {
-          "file": "values.yaml",
-          "target": "/root/demo/lets-chat"
-        },
-        {
-          "file": "requirements.yaml",
+          "file": "*.yaml",
           "target": "/root/demo/lets-chat"
         },
         {
