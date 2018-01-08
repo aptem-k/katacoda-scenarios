@@ -14,6 +14,10 @@ Update respository
 
 `helm repo update`{{execute}}
 
-Check all system services are up
+Check all system pods are up
 
 `kubectl get pods -n kube-system`{{execute}}
+
+Check Helm is healthy
+
+`helm version`{{execute}}
