@@ -33,6 +33,8 @@ View log
 Login to pod machine
 
 `kubectl exec $(kubectl get pods --selector=app=lets-chat,tier=backend --output=jsonpath={.items..metadata.name}) -it -- bash`{{execute}}
+
 `ls /data/db`{{execute}}
+
 `logout`{{execute}}
 
