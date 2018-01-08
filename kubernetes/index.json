@@ -23,9 +23,7 @@
       "code": "intro-code.sh"
     },
     "assets": {
-      "client": [ { "file": "lets-chat-mongo.yml", "target": "/root" } ],
-      "master": [ { "file": "lets-chat-mongo.yml", "target": "/root" } ],
-      "host01": [ { "file": "lets-chat-mongo.yml", "target": "/root" } ]
+      "master": [ { "file": "lets-chat-mongo.yml", "target": "/root" } ]
     }
   },
   "files": [
