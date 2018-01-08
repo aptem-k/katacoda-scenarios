@@ -18,6 +18,10 @@ View requirements.yaml
 
 `cat lets-chat/requirements.yaml`{{execute}}
 
+View configmap.yaml
+
+`cat lets-chat/templates/configmap.yaml`{{execute}}
+
 View deployment.yaml
 
 `cat lets-chat/templates/deployment.yaml`{{execute}}
@@ -25,7 +29,3 @@ View deployment.yaml
 View service.yaml
 
 `cat lets-chat/templates/service.yaml`{{execute}}
-
-View configmap.yaml
-
-`cat lets-chat/templates/configmap.yaml`{{execute}}

@@ -17,9 +17,9 @@ spec:
       - name: {{ .Chart.Name }}-app
         image: "sdelements/lets-chat:{{ .Chart.Version }}"
         imagePullPolicy: IfNotPresent
+        volumeMounts:
+        - name: mongo-settings
+          mountPath: /usr/src/app/config/settings.yml
         ports:
         - name: http
           containerPort: 8080
-        env:
-        - name: LCB_DATABASE_URI
-          value: mongodb://{{ .Release.Name }}-mongodb/letschat
