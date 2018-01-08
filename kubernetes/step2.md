@@ -28,7 +28,7 @@ Monitor pod
 
 View log
 
-`kubectl log -l app=lets-chat,tier=backend`{{execute}}
+`kubectl logs -l app=lets-chat,tier=backend`{{execute}}
 
 Login to pod machine
 
