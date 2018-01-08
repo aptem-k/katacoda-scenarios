@@ -21,6 +21,9 @@
     "intro": {
       "text": "intro.md",
       "code": "intro-code.sh"
+    },
+    "assets": {
+      "client": [ { "file": "*", "target": "/root" } ]
     }
   },
   "files": [
