@@ -22,8 +22,12 @@
     "assets": {
       "host01": [
         {
-          "file": "*",
+          "file": "*.yaml",
           "target": "/root/demo/lets-chat"
+        },
+        {
+          "file": "templates/*",
+          "target": "/root/demo/lets-chat/templates"
         }        
       ]
     }
