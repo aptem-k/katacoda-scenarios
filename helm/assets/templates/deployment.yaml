@@ -23,3 +23,7 @@ spec:
         ports:
         - name: http
           containerPort: 8080
+      volumes:
+        - name: mongo-settings
+          configMap:
+            name: mongo-settings
