@@ -17,6 +17,10 @@
       {
         "title": "Frontend Deployment",
         "text": "step3.md"
+      },
+      {
+        "title": "Kubernetes Dashboard",
+        "text": "step4.md"
       }
     ],
     "intro": {
