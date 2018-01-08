@@ -2,10 +2,6 @@ In this step we will verify the cluster is up and running.
 
 ## Task
 
-Display active configuration
-
-`kubectl config view`{{execute}}
-
 Print the client and server versions for the current context
 
 `kubectl version`{{execute}}
