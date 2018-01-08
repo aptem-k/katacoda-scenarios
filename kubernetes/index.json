@@ -10,11 +10,12 @@
         "text": "step1.md"
       },
       {
-        "title": "Database Manifest",
+        "title": "Database Deployment",
         "text": "step2.md"
+        "code": "step2-code.sh"
       },
       {
-        "title": "Database Deployment",
+        "title": "Frontend Deployment",
         "text": "step3.md"
       }
     ],
