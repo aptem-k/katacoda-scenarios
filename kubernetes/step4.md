@@ -8,7 +8,7 @@ Deploy the dashboard
 
 Check pod status
 
-`kubectl get pods -l k8s-app=kubernetes-dashboard`{{execute}}
+`kubectl get pods -n kube-system -l k8s-app=kubernetes-dashboard`{{execute}}
 
 Once all pod is up, start proxy
 
@@ -17,3 +17,5 @@ Once all pod is up, start proxy
 Open the application using URL below
 
 http://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/
+
+Use Ctrl+C to stop the proxy
