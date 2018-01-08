@@ -21,14 +21,6 @@
     "intro": {
       "text": "intro.md",
       "code": "intro-code.sh"
-    },
-    "assets": {
-      "client": [
-        {
-          "file": "lets-chat-mongo.yml",
-          "target": "~/"
-        }
-      ]
     }
   },
   "files": [
