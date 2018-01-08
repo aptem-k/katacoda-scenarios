@@ -1,1 +1,2 @@
+cd demo
 launch.sh
