@@ -24,4 +24,12 @@ sed -i 's/0.4.6/0.4.7/g' lets-chat/Chart.yaml
 
 Rollback
 
+`helm history demo`{{execute}}
+
 `helm rollback demo 1`{{execute}}
+
+Open application (with node port)
+
+`helm status demo`{{execute}}
+
+http://[[HOST_SUBDOMAIN]]-[[KATACODA_HOST]].environments.katacoda.com
