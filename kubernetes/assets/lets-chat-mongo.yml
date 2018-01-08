@@ -1,4 +1,4 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1beta2
 kind: Deployment
 metadata:
   name: lets-chat-mongo
@@ -28,12 +28,8 @@ metadata:
   labels:
     tier: backend
 spec:
-  type: ClusterIP
   selector:
     app: lets-chat
     tier: backend
   ports:
   - port: 27017
-    targetPort: 27017
-    protocol: TCP
-    name: lets-chat-mongo-port
