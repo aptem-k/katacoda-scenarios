@@ -4,7 +4,7 @@ In this step we will deploy and maintain life cycle of the application.
 
 Install the chart
 
-`helm install lets-chat --name demo`{{execute}}
+`helm install lets-chat --name demo --namespace demo`{{execute}}
 
 List releases
 
@@ -14,7 +14,7 @@ Check deployment status
 
 `helm status demo`{{execute}}
 
-`kubectl get pods`{{execute}}
+`kubectl get pods -n demo`{{execute}}
 
 Upgrade applicattion
 
@@ -38,4 +38,4 @@ Clean up
 
 `helm delete --purge demo`{{execute}}
 
-`kubectl get pods,deployments,services,replicasets,secrets,configmaps`{{execute}}
+`kubectl get pods,deployments,services,replicasets,secrets,configmaps -n demo`{{execute}}
