@@ -18,4 +18,4 @@ Examine a chart for possible issues
 
 Simulate installation
 
-helm install --debug --dry-run lets-chat
+`helm install --debug --dry-run lets-chat`{{execute}}

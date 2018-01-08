@@ -38,7 +38,7 @@
           "target": "/root/demo/lets-chat"
         },
         {
-          "file": "templates/*",
+          "file": "templates/*.yaml",
           "target": "/root/demo/lets-chat/templates"
         }        
       ]
