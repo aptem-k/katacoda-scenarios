@@ -4,7 +4,7 @@ In this step we will inspect our chart.
 
 Update dependencies
 
-`held dependency update lets-chat`{{execute}}
+`helm dependency update lets-chat`{{execute}}
 
 `ll lets-chat/charts`{{execute}}
 
