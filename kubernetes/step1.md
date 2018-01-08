@@ -1,19 +1,15 @@
-In this step we will prepare Helm tool.
+In this step we will verify the cluster is up and running.
 
 ## Task
 
-Download Helm
+Print the client and server versions for the current context
 
-`curl -LO https://storage.googleapis.com/kubernetes-helm/helm-v2.7.2-linux-amd64.tar.gz;tar -xvf helm-v2.7.2-linux-amd64.tar.gz;mv linux-amd64/helm /usr/local/bin/`{{execute}}
+`kubectl version`{{execute}}
 
-Initialize
+Display running kubernetes services
 
-`helm init`{{execute}}
+`kubectl cluster-info`{{execute}}
 
-Update respository
+Display system pods
 
-`helm repo update`{{execute}}
-
-Check all system services are up
-
-`kubectl get pod -n kube-system`{{execute}}
+`kubectl get pods -n kube-system`{{execute}}

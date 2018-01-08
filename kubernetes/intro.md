@@ -1,2 +1,2 @@
-Short demonstration of main Helm capabilities.
+Short demonstration of main Kubernetes capabilities.
 

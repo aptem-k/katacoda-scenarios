@@ -1,4 +1,4 @@
 # Kubernetes Demo
-Short demonstration of main Kubernetes capabilities.
+Short demonstration of main Helm capabilities.
 
-https://www.katacoda.com/aptem/scenarios/kubernetes
+https://www.katacoda.com/aptem/scenarios/helm
