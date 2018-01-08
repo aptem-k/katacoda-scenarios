@@ -1,6 +1,6 @@
 {
-  "title": "Kubernetes Demo",
-  "description": "Demonstration of main Kubernetes capabilities",
+  "title": "Helm Demo",
+  "description": "Demonstration of main Helm capabilities",
   "difficulty": "beginner",
   "time": "30 minutes",
   "details": {
