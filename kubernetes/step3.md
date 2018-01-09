@@ -16,7 +16,7 @@ Display services
 
 Scale the application
 
-`kubectl scale --replicas=2 deployment lets-chat-app`{{execute}}
+`kubectl scale deployment lets-chat-app --replicas=2`{{execute}}
 
 Display pods
 
