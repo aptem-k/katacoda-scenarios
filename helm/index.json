@@ -29,7 +29,8 @@
     ],
     "intro": {
       "text": "intro.md",
-      "code": "intro-code.sh"
+      "code": "intro-code.sh",
+      "courseData": "intro-course-data.sh"
     },
     "assets": {
       "host01": [
