@@ -4,7 +4,7 @@ In this step we will explore our chart.
 
 View chart structure
 
-`ll -R lets-chat`{{execute}}
+`tree lets-chat`{{execute}}
 
 View Chart.yaml
 
