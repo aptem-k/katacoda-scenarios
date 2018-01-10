@@ -1,6 +1,10 @@
-In this step we will explore Kubernetes dashboard.
+In this step we will add graphs to dahsboard.
 
 ## Task
+
+Install heapster
+
+`helm install --name heapster --namespace kube-system --set service.nameOverride=heapster stable/heapster`{{execute}}
 
 Deploy the dashboard
 
@@ -8,9 +12,9 @@ Deploy the dashboard
 
 Check pod status
 
-`kubectl get pods -n kube-system -l k8s-app=kubernetes-dashboard`{{execute}}
+`kubectl get pods -n kube-system`{{execute}}
 
-Once the pod is up, start proxy
+Once all pods are up, start proxy
 
 `kubectl proxy --address='0.0.0.0' --port=8080 --accept-hosts='^*$'&`{{execute}}
 
@@ -19,9 +23,3 @@ Open the application using URL below
 http://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/
 
 Use Ctrl+C to stop the proxy
-
-Clean up
-
-`kubectl delete deployments,services,configmaps --all`{{execute}}
-
-`kubectl get pods,deployments,services,replicasets,configmaps`{{execute}}
