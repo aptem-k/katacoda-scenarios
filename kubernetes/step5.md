@@ -24,4 +24,4 @@ Clean up
 
 `kubectl delete deployments,services,configmaps --all`{{execute}}
 
-`kubectl get pods,deployments,services,replicasets`{{execute}}
+`kubectl get pods,deployments,services,replicasets,configmaps`{{execute}}
