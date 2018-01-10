@@ -34,11 +34,9 @@ Open application (with node port)
 
 http://[[HOST_SUBDOMAIN]]-[[KATACODA_HOST]].environments.katacoda.com
 
-Delete database pod
+Delete database pod and relogin to see that the data was preserved
 
 `kubectl delete pod -n demo -l app=demo-mongodb`{{execute}}
-
-`ll /tmp/data`{{execute}}
 
 Clean up
 
