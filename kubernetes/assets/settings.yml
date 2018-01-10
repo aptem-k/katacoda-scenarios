@@ -1,2 +1,2 @@
 database:
-  uri: mongodb://mongo/letschat
+  uri: mongodb://db/letschat

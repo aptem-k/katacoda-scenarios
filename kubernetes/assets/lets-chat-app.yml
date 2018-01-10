@@ -28,7 +28,7 @@ spec:
           valueFrom:
             configMapKeyRef:
               name: mongo-settings
-              key: settings.yml.database.uri
+              key: settings.yml/database.uri
       volumes:
         - name: mongo-settings
           configMap:
