@@ -10,10 +10,6 @@ View Chart.yaml
 
 `cat lets-chat/Chart.yaml`{{execute}}
 
-View values.yaml
-
-`cat lets-chat/values.yaml`{{execute}}
-
 View requirements.yaml
 
 `cat lets-chat/requirements.yaml`{{execute}}
@@ -29,3 +25,11 @@ View deployment.yaml
 View service.yaml
 
 `cat lets-chat/templates/service.yaml`{{execute}}
+
+View pv.yaml
+
+`cat lets-chat/templates/pv.yaml`{{execute}}
+
+View values.yaml
+
+`cat lets-chat/values.yaml`{{execute}}
