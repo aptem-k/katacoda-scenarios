@@ -14,7 +14,7 @@ Once the pod is up, start proxy
 
 `kubectl proxy --address='0.0.0.0' --port=8080 --accept-hosts='^*$'&`{{execute}}
 
-Open the application using URL below
+Open the dashboard using URL below
 
 http://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/
 

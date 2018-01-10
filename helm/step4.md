@@ -37,9 +37,3 @@ http://[[HOST_SUBDOMAIN]]-[[KATACODA_HOST]].environments.katacoda.com
 Delete database pod and relogin to see that the data was preserved
 
 `kubectl delete pod -n demo -l app=demo-mongodb`{{execute}}
-
-Clean up
-
-`helm delete --purge demo`{{execute}}
-
-`kubectl get pods,deployments,services,rs,cm,pv,pvc -n demo`{{execute}}
