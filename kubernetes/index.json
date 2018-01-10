@@ -30,11 +30,7 @@
     "assets": {
       "host01": [
         {
-          "file": "lets-chat-mongo.yml",
-          "target": "/root/demo"
-        },
-        {
-          "file": "lets-chat-app.yml",
+          "file": "*.yml",
           "target": "/root/demo"
         }
       ]

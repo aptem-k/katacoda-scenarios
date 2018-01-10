@@ -2,7 +2,7 @@ In this step we will deploy database.
 
 ## Task
 
-View deployment manifest
+View database deployment manifest
 
 `cat lets-chat-mongo.yml`{{execute}}
 
