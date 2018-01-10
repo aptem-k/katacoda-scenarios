@@ -1,1 +1,1 @@
-apt install tree >/dev/null 2>&1;clear;cd demo
+apt install tree >/dev/null 2>&1;cd demo
