@@ -1,3 +1,2 @@
+apt install tree > /dev/null
 launch.sh
-apt install tree
-clear
