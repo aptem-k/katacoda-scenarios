@@ -22,6 +22,6 @@ Use Ctrl+C to stop the proxy
 
 Clean up
 
-`kubectl delete pods,deployments,services --all`{{execute}}
+`kubectl delete deployments,services,configmaps --all`{{execute}}
 
 `kubectl get pods,deployments,services,replicasets`{{execute}}
