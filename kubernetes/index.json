@@ -15,12 +15,16 @@
         "code": "step2-code.sh"
       },
       {
-        "title": "Frontend Deployment",
+        "title": "Create config map",
         "text": "step3.md"
       },
       {
-        "title": "Kubernetes Dashboard",
+        "title": "Frontend Deployment",
         "text": "step4.md"
+      },
+      {
+        "title": "Kubernetes Dashboard",
+        "text": "step5.md"
       }
     ],
     "intro": {

@@ -1,27 +1,35 @@
-In this step we will explore Kubernetes dashboard.
+In this step we will deploy frontend.
 
 ## Task
 
-Deploy the dashboard
+View application deployment manifest
 
-`kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/master/src/deploy/recommended/kubernetes-dashboard.yaml`{{execute}}
+`cat lets-chat-app.yml`{{execute}}
 
-Check pod status
+Create deployment based on manifest
 
-`kubectl get pods -n kube-system -l k8s-app=kubernetes-dashboard`{{execute}}
+`kubectl create -f lets-chat-app.yml`{{execute}}
 
-Once all pod is up, start proxy
+View settings file on pod
 
-`kubectl proxy --address='0.0.0.0' --port=8080 --accept-hosts='^*$'&`{{execute}}
+`kubectl exec $(kubectl get pods --selector=app=lets-chat,tier=frontend --output=jsonpath={.items..metadata.name}) -it -- bash`{{execute}}
 
-Open the application using URL below
+`cat /usr/src/app/config/settings.yml`{{execute}}
 
-http://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/
+`exit`{{execute}}
 
-Use Ctrl+C to stop the proxy
+Display services
 
-Clean up
+`kubectl get services`{{execute}}
 
-`kubectl delete deployments,services,configmaps --all`{{execute}}
+Scale the application
 
-`kubectl get pods,deployments,services,replicasets`{{execute}}
+`kubectl scale deployment lets-chat-app --replicas=2`{{execute}}
+
+Display pods
+
+`kubectl get pods`{{execute}}
+
+Once all pods are up, open the application using URL below with node port
+
+http://[[HOST_SUBDOMAIN]]-[[KATACODA_HOST]].environments.katacoda.com/
