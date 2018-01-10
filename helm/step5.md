@@ -23,3 +23,9 @@ Open the application using URL below
 http://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/
 
 Use Ctrl+C to stop the proxy
+
+Clean up
+
+`helm delete --purge demo`{{execute}}
+
+`kubectl get pods,deployments,services,replicasets,secrets,configmaps -n demo`{{execute}}

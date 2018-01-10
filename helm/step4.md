@@ -33,9 +33,3 @@ Open application (with node port)
 `helm status demo`{{execute}}
 
 http://[[HOST_SUBDOMAIN]]-[[KATACODA_HOST]].environments.katacoda.com
-
-Clean up
-
-`helm delete --purge demo`{{execute}}
-
-`kubectl get pods,deployments,services,replicasets,secrets,configmaps -n demo`{{execute}}
