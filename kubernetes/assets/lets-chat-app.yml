@@ -25,7 +25,10 @@ spec:
           containerPort: 8080
         env:
         - name: LCB_DATABASE_URI
-          value: mongodb://mongo/letschat
+          valueFrom:
+            configMapKeyRef:
+              name: mongo-settings
+              key: settings.yml.database.uri
       volumes:
         - name: mongo-settings
           configMap:
