@@ -34,8 +34,14 @@ Open application (with node port)
 
 http://[[HOST_SUBDOMAIN]]-[[KATACODA_HOST]].environments.katacoda.com
 
+Delete database pod
+
+`kubectl delete pod -n demo -l app=demo-mongodb`{{execute}}
+
+`ll /tmp/data`{{execute}}
+
 Clean up
 
 `helm delete --purge demo`{{execute}}
 
-`kubectl get pods,deployments,services,replicasets,secrets,configmaps -n demo`{{execute}}
+`kubectl get pods,deployments,services,rs,cm,pv,pvc -n demo`{{execute}}
