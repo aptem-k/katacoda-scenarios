@@ -30,6 +30,6 @@ Display pods
 
 `kubectl get pods`{{execute}}
 
-Once all pods are up, open the application using URL below with node port
+Once all pods are up, open the application using URL below
 
-http://[[HOST_SUBDOMAIN]]-[[KATACODA_HOST]].environments.katacoda.com/
+http://[[HOST_SUBDOMAIN]]-30303-[[KATACODA_HOST]].environments.katacoda.com/

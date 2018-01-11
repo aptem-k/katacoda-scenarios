@@ -28,11 +28,9 @@ Rollback
 
 `helm rollback demo 1`{{execute}}
 
-Open application (with node port)
+Open application
 
-`helm status demo`{{execute}}
-
-http://[[HOST_SUBDOMAIN]]-[[KATACODA_HOST]].environments.katacoda.com
+http://[[HOST_SUBDOMAIN]]-30303-[[KATACODA_HOST]].environments.katacoda.com
 
 Delete database pod and relogin to see that the data was preserved
 

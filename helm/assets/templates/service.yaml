@@ -9,6 +9,7 @@ spec:
   type: NodePort
   ports:
   - port: 8080
+    nodePort: 30303
   selector:
     app: {{ .Chart.Name }}
     tier: frontend
