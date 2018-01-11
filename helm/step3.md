@@ -6,7 +6,7 @@ Update dependencies
 
 `helm dependency update lets-chat`{{execute}}
 
-`ll lets-chat/charts`{{execute}}
+`tree lets-chat`{{execute}}
 
 Inspect
 
