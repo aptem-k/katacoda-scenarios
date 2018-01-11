@@ -42,6 +42,7 @@ spec:
   type: NodePort
   ports:
   - port: 8080
+  	nodePort: 8888
   selector:
     app: lets-chat
     tier: frontend
