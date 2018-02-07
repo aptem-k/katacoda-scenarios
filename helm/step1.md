@@ -4,7 +4,7 @@ In this step we will prepare Helm tool.
 
 Download Helm
 
-`curl -LO https://storage.googleapis.com/kubernetes-helm/helm-v2.7.2-linux-amd64.tar.gz;tar -xvf helm-v2.7.2-linux-amd64.tar.gz;mv linux-amd64/helm /usr/local/bin/`{{execute}}
+`curl https://raw.githubusercontent.com/kubernetes/helm/master/scripts/get | bash`{{execute}}
 
 Initialize
 
