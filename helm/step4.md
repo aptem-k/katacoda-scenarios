@@ -4,7 +4,7 @@ In this step we will deploy and maintain life cycle of the application.
 
 Install the chart
 
-`helm install lets-chat --name demo --namespace demo`{{execute}}
+`helm install lets-chat --name demo --namespace demo -f my_values.yml`{{execute}}
 
 List releases
 
@@ -18,9 +18,9 @@ Check deployment status
 
 Upgrade applicattion
 
-`sed -i 's/0.4.6/0.4.7/g' lets-chat/Chart.yaml`{{execute}}
+`sed -i 's/0.4.7/0.4.6/g' lets-chat/Chart.yaml`{{execute}}
 
-`helm upgrade demo lets-chat --set replicas=2`{{execute}}
+`helm upgrade demo lets-chat --set replicas=1`{{execute}}
 
 Rollback
 
