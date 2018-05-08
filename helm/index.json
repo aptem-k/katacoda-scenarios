@@ -34,7 +34,7 @@
     "assets": {
       "host01": [
         {
-          "file": "my_values.yaml",
+          "file": "my_values.yml",
           "target": "/root/demo"
         },
         {
