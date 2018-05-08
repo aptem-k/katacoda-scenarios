@@ -20,7 +20,7 @@ Upgrade applicattion
 
 `sed -i 's/0.4.7/0.4.6/g' lets-chat/Chart.yaml`{{execute}}
 
-`helm upgrade demo lets-chat --set replicas=1`{{execute}}
+`helm upgrade demo lets-chat --set replicas=2`{{execute}}
 
 Rollback
 
