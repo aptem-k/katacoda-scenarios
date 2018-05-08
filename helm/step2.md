@@ -36,4 +36,4 @@ View values.yaml
 
 View my_values.yml
 
-`cat my_values.yaml`{{execute}}
+`cat my_values.yml`{{execute}}
