@@ -33,3 +33,7 @@ View pv.yaml
 View values.yaml
 
 `cat lets-chat/values.yaml`{{execute}}
+
+View my_values.yml
+
+`cat my_values.yaml`{{execute}}
