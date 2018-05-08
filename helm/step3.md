@@ -18,4 +18,4 @@ Examine a chart for possible issues
 
 Simulate installation
 
-`helm install lets-chat --name demo --debug --dry-run`{{execute}}
+`helm install lets-chat --name demo --debug --dry-run -f my_values.yml`{{execute}}
